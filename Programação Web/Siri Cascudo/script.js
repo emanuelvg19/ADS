@@ -40,6 +40,7 @@ if (senha !== confirmaSenha) {
     form.appendChild(mensagemErro);
 
     return;
+
 }
 
 // Se chegou aqui, as duas validações foram aprovadas
@@ -47,5 +48,8 @@ console.log("Cadastro realizado com sucesso!");
 
 const nomeDigitado = document.getElementById('nome').value;
 console.log("Cliente:", nomeDigitado);
+
+// Redireciona o usuário para o cardápio
+window.location.href = "cardapio.html";
 
 });
