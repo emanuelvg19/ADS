@@ -41,3 +41,73 @@ body {
     height: 220px;
     object-fit: cover; /* Fundamental: Impede a imagem de distorcer */
 }
+
+/* Seção de bebidas */
+.secao-bebidas {
+    padding: 30px 20px;
+}
+
+.secao-bebidas h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Mantém as bebidas organizadas como os hambúrgueres */
+.secao-bebidas .vitrine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Faixa de destaque da seção */
+.titulo-secao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    background: linear-gradient(135deg, #252525, #414141);
+    padding: 20px;
+    margin-bottom: 30px;
+
+    border-top: 3px solid #f5b82e;
+    border-bottom: 3px solid #f5b82e;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-secao h2 {
+    color: #f5b82e;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.titulo-secao span {
+    height: 2px;
+    width: 60px;
+    background-color: #f5b82e;
+    border-radius: 5px;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 480px) {
+    .titulo-secao {
+        gap: 12px;
+        padding: 16px 10px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    .titulo-secao span {
+        width: 30px;
+    }
+}
