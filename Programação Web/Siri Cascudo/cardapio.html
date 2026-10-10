@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos-cardapio.css">
-    <script src="interacoes.js"></script>
     <title>Siri Cascudo</title>
-    <div class="info-carrinho">Carrinho: <span id="contador-itens">0</span></div>
+
 </head>
 <body>
+
+<header>
+    <h1>Siri Cascudo</h1>
+    <div class="info-carrinho">Carrinho: <span id="contador-itens">0</span></div>
+</header>
 
 <main class="vitrine-grid">
     <article class="card-produto">
@@ -65,7 +69,46 @@
             <button class="btn-adicionar">Adicionar</button>
         </div>
     </article>
+
+ <header class="secao-bebidas">
+    <h1>Bebidas</h1>
+ </header>
+   <div class="vitrine-grid">
+ 
+    <article class="card-bebida">
+        <img src="img/refrigerante.jpg" alt="Refrigerante" class="imagem-produto">
+        <div class="conteudo-card">
+            <h3>Refrigerante</h3>
+            <p>Coca, Fanta Laranja, Fanta Uva, Delrio Guaraná</p>
+            <span class="preco-destaque">R$ 8,00</span>
+            <button class="btn-adicionar">Adicionar</button>
+        </div>
+    </article>
+
+    <article class="card-bebida">
+        <img src="img/suco.jpg" alt="Refrigerante" class="imagem-produto">
+        <div class="conteudo-card">
+            <h3>Suco</h3>
+            <p>Abacaxi, Manga, Laranja, Maracujá</p>
+            <span class="preco-destaque">R$ 4,00</span>
+            <button class="btn-adicionar">Adicionar</button>
+        </div>
+    </article>
+
+    <article class="card-bebida">
+        <img src="img/agua.jpg" alt="Refrigerante" class="imagem-produto">
+        <div class="conteudo-card">
+            <h3>Agua</h3>
+            <p>Com Gás, Sem Gás</p>
+            <span class="preco-destaque">R$ 2,00</span>
+            <button class="btn-adicionar">Adicionar</button>
+        </div>
+    </article>
+    </div>
+
 </main>
+
+<script src="interacoes.js"></script>
 
 </body>
 </html>
